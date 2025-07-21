@@ -1,0 +1,33 @@
+{
+  "name": "javier-rojas-portfolio",
+  "version": "1.0.0",
+  "description": "Portafolio profesional de Javier Andrés Rojas Erazo - Analista y Desarrollador de Software",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "live-server --port=8000",
+    "build": "echo 'No build process needed for static site'"
+  },
+  "keywords": [
+    "portfolio",
+    "developer",
+    "software",
+    "php",
+    "javascript",
+    "java",
+    "web-development"
+  ],
+  "author": "Javier Andrés Rojas Erazo",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JavierRojas0495/portfolio"
+  },
+  "homepage": "https://javierrojas.dev",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+} 
