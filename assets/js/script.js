@@ -304,3 +304,5 @@ if (logo) {
     logo.style.transform = 'translateY(0)';
   }, 500);
 } 
+// Mostrar el año en curso en el footer
+document.getElementById('footer-year').textContent = `© ${new Date().getFullYear()}`;
