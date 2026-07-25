@@ -108,4 +108,7 @@ build/
 dist/
 
 # Local development
-.local/ 
+.local/
+
+# Cursor / Impeccable agent tooling (local)
+.cursor/ 

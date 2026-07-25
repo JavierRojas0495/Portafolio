@@ -3,491 +3,376 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta name="description" content="Javier Andrés Rojas Erazo, Analista y Desarrollador de Software. Portafolio / hoja de vida para reclutadores.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@400;500;600&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
-  <title>Javier Andrés Rojas Erazo - Analista y Desarrollador de Software</title>
+  <title>Javier Andrés Rojas Erazo · Analista y Desarrollador de Software</title>
 </head>
 <body>
-  <!-- Navigation -->
-  <nav class="navbar">
-    <div class="nav-container">
-      <div class="nav-logo">
-        <span class="logo-text">JR</span>
-      </div>
-      <ul class="nav-menu">
-        <li><a href="#home" class="nav-link">Inicio</a></li>
-        <li><a href="#about" class="nav-link">Sobre mí</a></li>
-        <li><a href="#experience" class="nav-link">Experiencia</a></li>
-        <li><a href="#skills" class="nav-link">Habilidades</a></li>
-        <li><a href="#projects" class="nav-link">Proyectos</a></li>
-        <li><a href="#contact" class="nav-link">Contacto</a></li>
-      </ul>
-      <div class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
-  </nav>
+  <!--
+    THESIS: Hoja de vida viva como informe de auditoría escaneable; rechaza el portafolio neón genérico.
+    OWN-WORLD: Papel + greenbar + tinta + sello rojo; Bricolage + Azeret Mono; filas de ledger y expedientes.
+    STORY: El reclutador entiende rol, trayectoria y prueba en segundos, y contacta.
+    FIRST VIEWPORT: Encabezado de reporte (JR, nombre, rol, foto carnet, línea de valor, CTA sello).
+    FORM: Ledger de auditoría (candidato #4, seed 6fd4ba1d); staging = informe cronológico, no índice resumable.
+  -->
 
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <div class="hero-container">
-      <div class="hero-content">
-        <div class="hero-text slide-in-left">
-          <h1 class="hero-title">
-            <span class="gradient-text">Javier Andrés Rojas Erazo</span>
-            <br>
-            <span class="hero-subtitle">Analista y Desarrollador de Software</span>
-          </h1>
-          <p class="hero-description">
-            Analista y Desarrollador de Software con más de 3 años de experiencia en el sector tecnológico. 
-            Especializado en análisis de sistemas, desarrollo de software y creación de soluciones empresariales 
-            que optimizan procesos y generan valor real para las organizaciones.
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="#top" aria-label="Inicio, JR">
+        <span class="brand-mark" aria-hidden="true">JR</span>
+        <span class="brand-meta">EXPEDIENTE · CALI</span>
+      </a>
+      <nav class="nav" aria-label="Principal">
+        <ul class="nav-list" id="nav-list">
+          <li><a href="#perfil">Perfil</a></li>
+          <li><a href="#trayectoria">Trayectoria</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#stack">Stack</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn-stamp btn-compact" href="#contacto">Contactar</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-list" aria-label="Abrir menú">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="shell hero-grid">
+        <div class="hero-copy">
+          <p class="doc-meta">
+            <span>DOC-HV-2026</span>
+            <span aria-hidden="true">·</span>
+            <span>Estado: disponible</span>
           </p>
-          <div class="hero-buttons">
-            <a href="#projects" class="btn btn-primary">Ver Proyectos</a>
-            <a href="#contact" class="btn btn-secondary">Contactar</a>
+          <h1 class="hero-name">Javier Andrés<br>Rojas Erazo</h1>
+          <p class="hero-role">Analista y Desarrollador de Software</p>
+          <p class="hero-lead">
+            Más de 3 años construyendo y auditando sistemas reales (logística, innovación de producto y operaciones)
+            con foco en análisis, backend y soluciones que las empresas sí usan.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-stamp" href="#contacto">Hablar ahora</a>
+            <a class="btn btn-outline" href="#trayectoria">Ver trayectoria</a>
           </div>
-        </div>
-        <div class="hero-image slide-in-right">
-          <div class="profile-card">
-            <img src="assets/images/IMG_20230222_145622.jpg" alt="Javier Rojas" class="profile-image">
-            <div class="profile-badge">
-              <i class="fas fa-code"></i>
-              <span>Backend Dev</span>
+          <dl class="snapshot" aria-label="Resumen rápido">
+            <div>
+              <dt>Experiencia</dt>
+              <dd>3+ años</dd>
             </div>
-          </div>
+            <div>
+              <dt>Base</dt>
+              <dd>Cali, CO</dd>
+            </div>
+            <div>
+              <dt>Foco</dt>
+              <dd>Análisis · Backend</dd>
+            </div>
+            <div>
+              <dt>Formación</dt>
+              <dd>SENA</dd>
+            </div>
+          </dl>
         </div>
+        <aside class="id-panel" aria-label="Identificación">
+          <figure class="id-photo">
+            <img src="assets/images/IMG_20230222_145622.jpg" alt="Retrato de Javier Andrés Rojas Erazo" width="480" height="600">
+          </figure>
+          <div class="id-stamp" aria-hidden="true">
+            <span>DISPONIBLE</span>
+          </div>
+          <p class="id-caption">Foto de identificación · Portafolio personal</p>
+        </aside>
       </div>
-      <div class="scroll-indicator">
-        <div class="scroll-arrow"></div>
-      </div>
-    </div>
-  </section>
+      <div class="greenbar-edge" aria-hidden="true"></div>
+    </section>
 
-  <!-- About Section -->
-  <section id="about" class="about">
-    <div class="container">
-      <h2 class="section-title">Sobre Mí</h2>
-      <div class="about-content">
-        <div class="about-text">
+    <section class="section" id="perfil">
+      <div class="shell">
+        <header class="section-head">
+          <p class="section-code">01 / PERFIL</p>
+          <h2>De hardware a sistemas que generan valor</h2>
+        </header>
+        <div class="prose-block">
           <p>
-            Mi camino en la tecnología comenzó con una idea completamente diferente. Cuando era más joven, 
-            me apasionaba arreglar computadores, cambiar componentes y todo lo relacionado con el hardware. 
-            Me imaginaba mi futuro trabajando con las partes físicas de las máquinas.
+            Empecé arreglando computadores y soñando con hardware. En el SENA, como Tecnólogo en Análisis y Desarrollo
+            de Sistemas de Información, descubrí el análisis y el software, y ahí se quedó mi carrera.
           </p>
           <p>
-            Sin embargo, cuando ingresé a la carrera de Tecnólogo en Análisis y Desarrollo de Sistemas de Información 
-            del SENA, descubrí un mundo completamente nuevo que me sorprendió y cautivó. Aunque era muy diferente 
-            a lo que tenía pensado inicialmente, cada día me interesaba más aprender sobre programación, análisis 
-            de sistemas y desarrollo de software. Lo que comenzó como una sorpresa se convirtió en mi verdadera pasión.
+            Hoy trabajo en innovación y desarrollo: mejorar productos, interfaces y funcionalidades con criterio de
+            negocio, y usar IA como herramienta para entregar resultados más claros a usuarios y clientes.
           </p>
-          <p>
-            Tengo más de 3 años de experiencia como desarrollador de software y aunque he adquirido diferentes 
-            conocimientos, siempre me gusta aprender más de este campo y mejorar mis habilidades. 
-            Me apasiona resolver problemas complejos y crear productos que generen valor real para las personas y las empresas.
-          </p>
-          <div class="tech-highlights">
-            <div class="tech-item">
-              <i class="fas fa-chart-line"></i>
-              <span>Análisis de Sistemas</span>
-            </div>
-            <div class="tech-item">
-              <i class="fas fa-code"></i>
-              <span>Desarrollo de Software</span>
-            </div>
-            <div class="tech-item">
-              <i class="fas fa-lightbulb"></i>
-              <span>Soluciones Innovadoras</span>
-            </div>
-          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Experience Section -->
-  <section id="experience" class="experience">
-    <div class="container">
-      <h2 class="section-title">Experiencia Laboral</h2>
-      <div class="experience-timeline">
-        <div class="experience-item">
-          <div class="experience-content">
-            <div class="experience-header">
-              <h3>Gestor de desarrollo en el Área de innovación</h3>
-              <span class="company">Colombia Software</span>
-              <span class="period">Agosto 2025 - Presente</span>
-            </div>
-            <div class="experience-description">
-              <p>Gestor de desarrollo enfocado en mejoras visuales y funcionales del sistema. Responsabilidades:</p>
-              <ul>
-                <li>Mejora del diseño visual del sistema para optimizar la experiencia del usuario</li>
-                <li>Desarrollo y mejora de funcionalidades del sistema</li>
-                <li>Implementación de mejoras en la interfaz de usuario</li>
-                <li>Uso de Inteligencia Artificial para conseguir mejores resultados y hacer que los productos sean más atractivos para usuarios y clientes</li>
-                <li>Colaboración en el área de innovación para generar soluciones creativas</li>
-              </ul>
-            </div>
-            <div class="experience-tech">
-              <span>PHP</span>
-              <span>Vue</span>
-              <span>JavaScript</span>
-              <span>HTML/CSS</span>
-              <span>PostgreSQL</span>
-              <span>Git</span>
-              <span>Metodologías Ágiles</span>
-            </div>
-          </div>
-        </div>
+    <section class="section section-ledger" id="trayectoria">
+      <div class="shell">
+        <header class="section-head">
+          <p class="section-code">02 / TRAYECTORIA</p>
+          <h2>Experiencia laboral</h2>
+          <p class="section-sub">Periodo · Empresa · Rol. Detalle al expandir cada fila.</p>
+        </header>
 
-        <div class="experience-item">
-          <div class="experience-content">
-            <div class="experience-header">
-              <h3>Desarrollador Backend</h3>
-              <span class="company">EXISTA YA</span>
-              <span class="period">Abril 2025 - Junio 2025</span>
-            </div>
-            <div class="experience-description">
-              <p>Participación en la creación de servicios para consulta y envío de información entre sistemas. Responsabilidades:</p>
+        <div class="ledger" role="list">
+          <article class="ledger-row is-open" role="listitem">
+            <button class="ledger-summary" type="button" aria-expanded="true">
+              <span class="ledger-period">19 Ago 2025 – Presente</span>
+              <span class="ledger-company">Colombia Software</span>
+              <span class="ledger-title">Gestor de Desarrollo · Área de Innovación</span>
+              <span class="ledger-chevron" aria-hidden="true"></span>
+            </button>
+            <div class="ledger-detail">
               <ul>
-                <li>Creación de servicios para consulta y envío de información entre sistemas</li>
-                <li>Apoyo en tareas de soporte técnico y seguimiento de incidencias</li>
-                <li>Solución de problemas en desarrollos existentes</li>
-                <li>Trabajo en equipo para garantizar respuestas rápidas y efectivas</li>
+                <li>Desarrollo frontend y backend de aplicaciones web y móviles para clientes de los sectores financiero y empresarial.</li>
+                <li>Construcción de aplicaciones móviles híbridas con Angular y Cordova JS.</li>
+                <li>Integración de aplicaciones con servicios backend y sistemas internos mediante APIs REST.</li>
+                <li>Creación de funcionalidades y mejoras visuales según los requerimientos de cada cliente.</li>
               </ul>
+              <p class="tech-line"><span>PHP</span><span>Vue.js</span><span>Angular</span><span>Cordova JS</span><span>Node.js</span><span>JavaScript</span><span>PostgreSQL</span><span>APIs REST</span><span>Git</span></p>
             </div>
-            <div class="experience-tech">
-              <span>PHP</span>
-              <span>JavaScript</span>
-              <span>SQL Server</span>
-              <span>Git</span>
-              <span>Metodologías Ágiles</span>
-            </div>
-          </div>
-        </div>
+          </article>
 
-        <div class="experience-item">
-          <div class="experience-content">
-            <div class="experience-header">
-              <h3>Desarrollador Full Stack</h3>
-              <span class="company">WSI</span>
-              <span class="period">Abril 2024 - Diciembre 2024</span>
-            </div>
-            <div class="experience-description">
-              <p>Desarrollador full stack freelancer con especialización en tecnologías web modernas. Responsabilidades:</p>
+          <article class="ledger-row" role="listitem">
+            <button class="ledger-summary" type="button" aria-expanded="false">
+              <span class="ledger-period">Abr 2025 – Jun 2025</span>
+              <span class="ledger-company">EXISTA YA</span>
+              <span class="ledger-title">Desarrollador Backend</span>
+              <span class="ledger-chevron" aria-hidden="true"></span>
+            </button>
+            <div class="ledger-detail">
               <ul>
-                <li>Desarrollo de aplicaciones web dinámicas y responsivas</li>
-                <li>Creación de soluciones personalizadas para necesidades únicas de clientes</li>
-                <li>Servicios de desarrollo completo, optimización y mantenimiento continuo</li>
-                <li>Implementación de interfaces modernas y funcionales</li>
+                <li>Servicios de consulta y envío de información entre sistemas.</li>
+                <li>Soporte técnico, seguimiento de incidencias y corrección de desarrollos.</li>
+                <li>Trabajo en equipo para respuestas rápidas y efectivas.</li>
               </ul>
+              <p class="tech-line"><span>PHP</span><span>JavaScript</span><span>SQL Server</span><span>Git</span><span>Ágil</span></p>
             </div>
-            <div class="experience-tech">
-              <span>PHP</span>
-              <span>JavaScript</span>
-              <span>HTML/CSS</span>
-              <span>Bootstrap</span>
-              <span>Git</span>
-              <span>Metodologías Ágiles</span>
-            </div>
-          </div>
-        </div>
+          </article>
 
-        <div class="experience-item">
-          <div class="experience-content">
-            <div class="experience-header">
-              <h3>Analista SQA</h3>
-              <span class="company">Pana Business</span>
-              <span class="period">Octubre 2023 - Abril 2024</span>
-            </div>
-            <div class="experience-description">
-              <p>Como Analista SQA, me especialicé en el análisis detallado y seguimiento exhaustivo de aplicativos empresariales. Responsabilidades:</p>
+          <article class="ledger-row" role="listitem">
+            <button class="ledger-summary" type="button" aria-expanded="false">
+              <span class="ledger-period">Abr 2024 – Dic 2024</span>
+              <span class="ledger-company">WSI</span>
+              <span class="ledger-title">Desarrollador Full Stack</span>
+              <span class="ledger-chevron" aria-hidden="true"></span>
+            </button>
+            <div class="ledger-detail">
               <ul>
-                <li>Análisis detallado y seguimiento exhaustivo de aplicativos empresariales</li>
-                <li>Identificación y documentación de errores utilizando técnicas avanzadas de prueba y depuración</li>
-                <li>Colaboración en la resolución efectiva de problemas para garantizar estabilidad y funcionalidad óptima</li>
-                <li>Elaboración de informes de calidad y recomendaciones para mejorar eficiencia y experiencia del usuario</li>
+                <li>Aplicaciones web dinámicas y responsivas a medida.</li>
+                <li>Desarrollo, optimización y mantenimiento continuo para clientes.</li>
+                <li>Interfaces modernas y funcionales.</li>
               </ul>
+              <p class="tech-line"><span>PHP</span><span>JavaScript</span><span>HTML/CSS</span><span>Bootstrap</span><span>Git</span><span>Ágil</span></p>
             </div>
-            <div class="experience-tech">
-              <span>Postman</span>
-              <span>SQL</span>
-              <span>Metodologías Ágiles</span>
-            </div>
-          </div>
-        </div>
+          </article>
 
-        <div class="experience-item">
-          <div class="experience-content">
-            <div class="experience-header">
-              <h3>Analista y Desarrollador de Software</h3>
-              <span class="company">Colombia Software</span>
-              <span class="period">Abril 2023 - Octubre 2023</span>
-            </div>
-            <div class="experience-description">
-              <p>Como Analista y Desarrollador de Software, lideré proyectos enfocados en optimizar procesos logísticos, especialmente en la gestión de mercancías. Responsabilidades:</p>
+          <article class="ledger-row" role="listitem">
+            <button class="ledger-summary" type="button" aria-expanded="false">
+              <span class="ledger-period">Oct 2023 – Abr 2024</span>
+              <span class="ledger-company">Pana Business</span>
+              <span class="ledger-title">Analista SQA</span>
+              <span class="ledger-chevron" aria-hidden="true"></span>
+            </button>
+            <div class="ledger-detail">
               <ul>
-                <li>Desarrollo de soluciones especializadas para generación de manifiestos y seguimiento de envíos</li>
-                <li>Gestión de datos críticos para la logística y optimización de procesos operativos</li>
-                <li>Trabajo estrecho con equipos multidisciplinarios para convertir requisitos del cliente en soluciones técnicas efectivas</li>
-                <li>Mejora de la eficiencia operativa y visibilidad de la cadena de suministro</li>
-                <li>Soporte técnico continuo y atención personalizada para implementaciones exitosas</li>
+                <li>Análisis y seguimiento de aplicativos empresariales.</li>
+                <li>Identificación y documentación de errores con pruebas y depuración.</li>
+                <li>Informes de calidad y recomendaciones de UX/eficiencia.</li>
               </ul>
+              <p class="tech-line"><span>Postman</span><span>SQL</span><span>Ágil</span></p>
             </div>
-            <div class="experience-tech">
-              <span>PHP</span>
-              <span>JavaScript</span>
-              <span>HTML/CSS</span>
-              <span>PostgreSQL</span>
-              <span>Linux</span>
-              <span>Bootstrap</span>
-              <span>Git</span>
-              <span>Metodologías Ágiles</span>
-            </div>
-          </div>
-        </div>
+          </article>
 
-        <div class="experience-item">
-          <div class="experience-content">
-            <div class="experience-header">
-              <h3>Analista y Desarrollador de Software</h3>
-              <span class="company">Play Technologies</span>
-              <span class="period">Marzo 2021 - Marzo 2023</span>
-            </div>
-            <div class="experience-description">
-              <p>Como Analista y Desarrollador de Software, lideré proyectos especializados en el análisis y desarrollo de soluciones para casas de apuestas. Responsabilidades:</p>
+          <article class="ledger-row" role="listitem">
+            <button class="ledger-summary" type="button" aria-expanded="false">
+              <span class="ledger-period">Abr 2023 – Oct 2023</span>
+              <span class="ledger-company">Colombia Software</span>
+              <span class="ledger-title">Analista y Desarrollador de Software</span>
+              <span class="ledger-chevron" aria-hidden="true"></span>
+            </button>
+            <div class="ledger-detail">
               <ul>
-                <li>Análisis y desarrollo de soluciones especializadas para casas de apuestas</li>
-                <li>Colaboración estrecha con clientes para mejorar software existente mediante análisis detallados</li>
-                <li>Implementación de sistemas de auditoría y establecimiento de sistemas de alerta</li>
-                <li>Garantía de integridad de datos y continuidad operativa</li>
-                <li>Generación de informes completos sobre ventas y operaciones</li>
+                <li>Soluciones para manifiestos, seguimiento de envíos y logística.</li>
+                <li>Gestión de datos críticos y optimización de procesos operativos.</li>
+                <li>Traducción de requisitos de cliente a soluciones técnicas.</li>
+                <li>Soporte técnico e implementación con equipos multidisciplinarios.</li>
               </ul>
+              <p class="tech-line"><span>PHP</span><span>JavaScript</span><span>HTML/CSS</span><span>PostgreSQL</span><span>Linux</span><span>Bootstrap</span><span>Git</span></p>
             </div>
-            <div class="experience-tech">
-              <span>PHP</span>
-              <span>Java</span>
-              <span>JavaScript</span>
-              <span>PostgreSQL</span>
-              <span>Bootstrap</span>
-              <span>HTML/CSS</span>
-              <span>Git</span>
-              <span>Metodologías Ágiles</span>
-            </div>
-          </div>
-        </div>
+          </article>
 
-        <div class="experience-item">
-          <div class="experience-content">
-            <div class="experience-header">
-              <h3>Desarrollador Web</h3>
-              <span class="company">Softheory</span>
-              <span class="period">2018 - 2019</span>
-            </div>
-            <div class="experience-description">
-              <p>Prácticas profesionales en desarrollo web y tecnologías frontend. Aprendizajes:</p>
+          <article class="ledger-row" role="listitem">
+            <button class="ledger-summary" type="button" aria-expanded="false">
+              <span class="ledger-period">Mar 2021 – Mar 2023</span>
+              <span class="ledger-company">Play Technologies</span>
+              <span class="ledger-title">Analista y Desarrollador de Software</span>
+              <span class="ledger-chevron" aria-hidden="true"></span>
+            </button>
+            <div class="ledger-detail">
               <ul>
-                <li>Desarrollo web básico con HTML, CSS y JavaScript</li>
-                <li>Fundamentos de programación y lógica</li>
-                <li>Introducción a frameworks frontend</li>
-                <li>Metodologías de desarrollo ágil</li>
+                <li>Análisis y desarrollo para casas de apuestas.</li>
+                <li>Mejora de software existente con clientes y análisis detallados.</li>
+                <li>Sistemas de auditoría, alertas e integridad de datos.</li>
+                <li>Informes de ventas y operaciones.</li>
               </ul>
+              <p class="tech-line"><span>PHP</span><span>Java</span><span>JavaScript</span><span>PostgreSQL</span><span>Bootstrap</span><span>HTML/CSS</span><span>Git</span></p>
             </div>
-            <div class="experience-tech">
-              <span>HTML/CSS</span>
-              <span>JavaScript</span>
-              <span>Git</span>
-              <span>Bootstrap</span>
-              <span>Metodologías Ágiles</span>
+          </article>
+
+          <article class="ledger-row" role="listitem">
+            <button class="ledger-summary" type="button" aria-expanded="false">
+              <span class="ledger-period">2018 – 2019</span>
+              <span class="ledger-company">Softheory</span>
+              <span class="ledger-title">Desarrollador Web · Prácticas</span>
+              <span class="ledger-chevron" aria-hidden="true"></span>
+            </button>
+            <div class="ledger-detail">
+              <ul>
+                <li>Fundamentos de desarrollo web con HTML, CSS y JavaScript.</li>
+                <li>Introducción a frameworks frontend y metodologías ágiles.</li>
+              </ul>
+              <p class="tech-line"><span>HTML/CSS</span><span>JavaScript</span><span>Bootstrap</span><span>Git</span><span>Ágil</span></p>
             </div>
-          </div>
+          </article>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Skills Section -->
-  <section id="skills" class="skills">
-    <div class="container">
-      <h2 class="section-title">Habilidades Técnicas</h2>
-      <div class="skills-grid">
-        <div class="skill-category">
-          <h3>Lenguajes de Programación</h3>
-          <div class="skill-items">
-            <div class="skill-item">
-              <span class="skill-name">PHP</span>
-              <div class="skill-bar">
-                <div class="skill-progress" style="width: 70%"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <span class="skill-name">JavaScript</span>
-              <div class="skill-bar">
-                <div class="skill-progress" style="width: 60%"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <span class="skill-name">Java</span>
-              <div class="skill-bar">
-                <div class="skill-progress" style="width: 50%"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <span class="skill-name">HTML/CSS</span>
-              <div class="skill-bar">
-                <div class="skill-progress" style="width: 40%"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <span class="skill-name">TypeScript</span>
-              <div class="skill-bar">
-                <div class="skill-progress" style="width: 40%"></div>
-              </div>
-            </div>
-          </div>
-        </div>
+    <section class="section" id="proyectos">
+      <div class="shell">
+        <header class="section-head">
+          <p class="section-code">03 / EXPEDIENTES</p>
+          <h2>Proyectos con evidencia pública</h2>
+        </header>
 
-        <div class="skill-category">
-          <h3>Bases de Datos</h3>
-          <div class="skill-items">
-            <div class="skill-item">
-              <span class="skill-name">PostgreSQL</span>
-              <div class="skill-bar">
-                <div class="skill-progress" style="width: 60%"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <span class="skill-name">MySQL</span>
-              <div class="skill-bar">
-                <div class="skill-progress" style="width: 60%"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <span class="skill-name">SQL Server</span>
-              <div class="skill-bar">
-                <div class="skill-progress" style="width: 50%"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <span class="skill-name">Oracle</span>
-              <div class="skill-bar">
-                <div class="skill-progress" style="width: 30%"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="skill-category">
-          <h3>Herramientas</h3>
-          <div class="skill-items">
-            <div class="skill-item">
-              <span class="skill-name">Visual Studio</span>
-              <div class="skill-bar">
-                <div class="skill-progress" style="width: 60%"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <span class="skill-name">Git</span>
-              <div class="skill-bar">
-                <div class="skill-progress" style="width: 70%"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <span class="skill-name">Cursos</span>
-              <div class="skill-bar">
-                <div class="skill-progress" style="width: 50%"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="projects">
-    <div class="container">
-      <h2 class="section-title">Proyectos Destacados</h2>
-      <div class="projects-grid">
-        <div class="project-card">
-          <div class="project-header">
-            <h3>AuditPlay - Sistema de Auditoría</h3>
-            <div class="project-tech">
-              <span>PHP</span>
-              <span>Java</span>
-              <span>JavaScript</span>
-              <span>PostgreSQL</span>
-            </div>
-          </div>
-          <p>Sistema especializado en auditoría y seguimiento para casas de apuestas. Desarrollado en Play Technologies, 
-          proporciona seguridad y validación de operaciones en el sector de juegos de suerte y azar con más de 11 años de experiencia.</p>
-          <div class="project-links">
-            <a href="https://auditplay.co/" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i> Ver Proyecto</a>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-header">
-            <h3>Silogtran - Gestión Logística</h3>
-            <div class="project-tech">
-              <span>PHP</span>
-              <span>JavaScript</span>
-              <span>PostgreSQL</span>
-              <span>Linux</span>
-            </div>
-          </div>
-          <p>Sistema integral de gestión logística y transporte de mercancías. Desarrollado en Colombia Software, 
-          centraliza información para optimizar la cadena de suministro con integración de sistemas SCM, ERP, TMS y WMS.</p>
-          <div class="project-links">
-            <a href="https://www.colombiasoftware.net/silogtran/" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i> Ver Proyecto</a>
-          </div>
-        </div>
-
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <div class="container">
-      <h2 class="section-title">Contacto</h2>
-      <div class="contact-content">
-        <div class="contact-info">
-          <p>¿Interesado en trabajar juntos? ¡Hablemos!</p>
-          <div class="contact-methods">
-            <a href="https://www.linkedin.com/in/javier-andres-rojas-erazo-014034139/" class="contact-link">
-              <i class="fab fa-linkedin"></i>
-              <span>LinkedIn</span>
+        <div class="dossiers">
+          <article class="dossier">
+            <header class="dossier-head">
+              <p class="dossier-id">EXP-001</p>
+              <h3>AuditPlay: sistema de auditoría</h3>
+            </header>
+            <p>
+              Auditoría y seguimiento para casas de apuestas: seguridad y validación de operaciones en juegos de suerte
+              y azar. Desarrollado en Play Technologies.
+            </p>
+            <p class="tech-line"><span>PHP</span><span>Java</span><span>JavaScript</span><span>PostgreSQL</span></p>
+            <a class="dossier-link" href="https://auditplay.co/" target="_blank" rel="noopener noreferrer">
+              Abrir evidencia → auditplay.co
             </a>
-            <a href="https://github.com/JavierRojas0495" class="contact-link">
-              <i class="fab fa-github"></i>
-              <span>GitHub</span>
+          </article>
+
+          <article class="dossier">
+            <header class="dossier-head">
+              <p class="dossier-id">EXP-002</p>
+              <h3>Silogtran: gestión logística</h3>
+            </header>
+            <p>
+              Gestión integral de logística y transporte de mercancías. Centraliza información de cadena de suministro
+              con integración SCM, ERP, TMS y WMS. Colombia Software.
+            </p>
+            <p class="tech-line"><span>PHP</span><span>JavaScript</span><span>PostgreSQL</span><span>Linux</span></p>
+            <a class="dossier-link" href="https://www.colombiasoftware.net/silogtran/" target="_blank" rel="noopener noreferrer">
+              Abrir evidencia → colombiasoftware.net
             </a>
-            <a href="https://api.whatsapp.com/send?phone=573173280247" class="contact-link">
-              <i class="fab fa-whatsapp"></i>
-              <span>WhatsApp</span>
-            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-stack" id="stack">
+      <div class="shell">
+        <header class="section-head">
+          <p class="section-code">04 / STACK</p>
+          <h2>Herramientas en uso</h2>
+          <p class="section-sub">Sin barras inventadas: solo el inventario real.</p>
+        </header>
+
+        <div class="stack-groups">
+          <div class="stack-group">
+            <h3>Lenguajes</h3>
+            <ul class="chip-list">
+              <li>PHP</li>
+              <li>JavaScript</li>
+              <li>Java</li>
+              <li>TypeScript</li>
+              <li>HTML / CSS</li>
+            </ul>
           </div>
-          <div class="contact-details">
-            <p><i class="fas fa-map-marker-alt"></i> Cali, Valle del Cauca, Colombia</p>
-            <p><i class="fas fa-graduation-cap"></i> SENA - Tecnología de Sistemas Informáticos</p>
+          <div class="stack-group">
+            <h3>Datos</h3>
+            <ul class="chip-list">
+              <li>PostgreSQL</li>
+              <li>MySQL</li>
+              <li>SQL Server</li>
+              <li>Oracle</li>
+            </ul>
+          </div>
+          <div class="stack-group">
+            <h3>Entorno</h3>
+            <ul class="chip-list">
+              <li>Vue.js</li>
+              <li>Angular</li>
+              <li>Cordova JS</li>
+              <li>Node.js</li>
+              <li>APIs REST</li>
+              <li>Git</li>
+              <li>Bootstrap</li>
+              <li>Postman</li>
+              <li>Linux</li>
+              <li>Metodologías ágiles</li>
+            </ul>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-content" style="text-align: center;">
-        <div>Javier Andrés Rojas Erazo</div>
-        <div>Analista y Desarrollador de Software</div>
-        <div id="footer-year"></div>
+    <section class="section section-contact" id="contacto">
+      <div class="shell contact-panel">
+        <header class="section-head">
+          <p class="section-code">05 / CONTACTO</p>
+          <h2>¿Hablamos de una vacante o un proyecto?</h2>
+          <p class="section-sub">Respuesta rápida por WhatsApp o LinkedIn.</p>
+        </header>
+
+        <div class="contact-grid">
+          <a class="contact-channel" href="https://www.linkedin.com/in/javier-andres-rojas-erazo-014034139/" target="_blank" rel="noopener noreferrer">
+            <span class="channel-code">CH-01</span>
+            <span class="channel-name">LinkedIn</span>
+            <span class="channel-hint">Perfil profesional</span>
+          </a>
+          <a class="contact-channel" href="https://github.com/JavierRojas0495" target="_blank" rel="noopener noreferrer">
+            <span class="channel-code">CH-02</span>
+            <span class="channel-name">GitHub</span>
+            <span class="channel-hint">Código y actividad</span>
+          </a>
+          <a class="contact-channel contact-channel-accent" href="https://api.whatsapp.com/send?phone=573173280247" target="_blank" rel="noopener noreferrer">
+            <span class="channel-code">CH-03</span>
+            <span class="channel-name">WhatsApp</span>
+            <span class="channel-hint">+57 317 328 0247</span>
+          </a>
+        </div>
+
+        <p class="contact-meta">
+          <span>Cali, Valle del Cauca, Colombia</span>
+          <span aria-hidden="true">·</span>
+          <span>SENA · Tecnología de Sistemas Informáticos</span>
+        </p>
       </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <p>Javier Andrés Rojas Erazo · Analista y Desarrollador de Software</p>
+      <p class="footer-year" id="footer-year"></p>
     </div>
   </footer>
 
