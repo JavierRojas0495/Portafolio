@@ -16,7 +16,7 @@ Portafolio personal de Javier Andrés Rojas Erazo que funciona como hoja de vida
 
 ## Positioning
 
-Analista y Desarrollador de Software con más de 3 años de experiencia real en empresas colombianas (logística, auditoría de apuestas, innovación de producto), no un perfil genérico de “fullstack junior”. Trayectoria verificable desde prácticas hasta roles de innovación y backend.
+Desarrollador Full Stack / Backend mid con más de 3 años de experiencia real en empresas colombianas (logística, auditoría de apuestas, innovación de producto), no un perfil “junior”. Trayectoria verificable; mensaje alineado a remoto LATAM (PHP · Laravel · Vue · TypeScript).
 
 ## Operating Context
 
@@ -32,19 +32,20 @@ Página web estática de una sola vista (scroll), consumida en escritorio o móv
 ## Brand Commitments
 
 - Nombre: Javier Andrés Rojas Erazo
-- Título profesional: Analista y Desarrollador de Software
+- Título profesional: Desarrollador Full Stack / Backend
 - Marca corta existente: JR
 - Foto de perfil en `assets/images/`
-- Tono: profesional, claro, confiado; sin jerga vacía ni hype exagerado
+- CV PDF en `assets/docs/CV_Javier_Rojas_FullStack_2026.pdf`
+- Tono: profesional, claro, confiado; sin “Junior”, sin jerga vacía ni hype exagerado
 
 ## Evidence on Hand
 
-- Experiencia laboral documentada: Colombia Software (Gestor de Desarrollo en el Área de Innovación desde el 19 de agosto de 2025, además de un ciclo anterior), EXISTA YA, WSI, Pana Business, Play Technologies, Softheory
-- Proyectos con URL pública: AuditPlay (`https://auditplay.co/`), Silogtran (`https://www.colombiasoftware.net/silogtran/`)
-- Trabajo actual confirmado: desarrollo frontend y backend de aplicaciones web y móviles híbridas para clientes de los sectores financiero y empresarial; integración con servicios backend y sistemas internos.
-- Stack confirmado: PHP, JavaScript, Java, Vue.js, Angular, Cordova JS, Node.js, APIs REST, HTML/CSS, TypeScript, PostgreSQL, MySQL, SQL Server, Oracle, Git, Bootstrap, Postman, metodologías ágiles
-- Contacto: LinkedIn, GitHub (`JavierRojas0495`), WhatsApp (+57 317 328 0247)
-- Ausencias: no hay métricas de impacto cuantificadas ni testimonials; no fabricarlos
+- Experiencia laboral documentada: Colombia Software (Desarrollador Full Stack · Innovación desde ago 2025, más ciclo SILOGTRAN 2023), Existaya, WSI, Pana Business, Play Technologies, Softheory
+- Proyectos con URL pública: AuditPlay (`https://auditplay.co/`), SILOGTRAN (`https://www.colombiasoftware.net/silogtran/`)
+- Trabajo actual confirmado: apps web/móviles híbridas, Vue/PHP, Angular/Cordova, APIs REST para clientes empresariales
+- Stack confirmado: PHP, Laravel, JavaScript/TypeScript, Vue.js, Angular, Cordova, Node.js, APIs REST, PostgreSQL, MySQL, SQL Server, Git, Linux, Postman, Bootstrap
+- Contacto: WhatsApp (+57 317 328 0247), email (`jare_123@hotmail.es`), LinkedIn, GitHub (`JavierRojas0495`), CV PDF
+- Ausencias: no hay métricas de impacto cuantificadas ni testimonials; no fabricarlos; foto actual es informal (candidato a reemplazo profesional)
 
 ## Product Principles
 
